@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden de compra </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+         
+
+</head>
+
+
+
+<body style="background-color: blue; color: black;" onload="cargarPaginas()">
+
+
+    <header id="principal">
+        <img src="../images/chino.jpg" alt="China Express Food " title="China Express Food " width="200px">
+        <h1>Restaurante China Express Food </h1>
+
+        <nav class="ind">
+
+                    <ul id="idMenu">
+               
+                     </ul>      
+            
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+
+        <header >
+
+            <h1 class="text-center">Orden de compra</h1>
+        </header>
+
+        <form action="">
+
+            <label for="idOrden">Numero de orden</label>
+            <input type="text"  class="form-control"  id="idOrden" required>
+
+       
+
+            <label for="idFechaEmision">Fecha Entrega</label> 
+            <input type="tex" class="form-control"  id="idFechaEmision" required>
+
+           
+
+            <label for="idProveedor">Codigo Proveedor</label>
+            <input type="text" class="form-control" id="idProveedor"required>
+            
+          
+
+            <label for="idProducto">Nombre Producto </label>
+            <input type="text" class="form-control" id="idProducto" required >
+
+
+           
+
+            <label for="idCantidad">Cantidad:</label>
+            <input type="number"class="form-control"  id="idCantidad" required>
+
+            <br>     
+
+          
+            <input type="button" value="Guardar" class="btn btn-success" onclick="agregarCompra()">
+
+            <input type="button" value="Cancelar" class="btn btn-success" onclick="cancelar()">
+
+            <br>
+            <br>
+            <table class="table table-bordered table-striped">
+                <thead style="background-color: black; color: white;">
+                    <tr>
+                        <th>Número de Orden</th>
+                         <th>nombre del Producto</th>
+                        <th>Fecha</th>
+                        <th>Cantidad</th>
+
+                    </tr>
+                </thead>
+                <tbody id="idTableBodyOrden">
+
+                </tbody>
+            </table>
+
+           
+
+            
+           
+
+        </form>
+
+        
+
+    </div>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

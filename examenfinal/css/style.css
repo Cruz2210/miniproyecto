@@ -1,0 +1,210 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	color:black;
+	font-size:3rem;
+
+}
+
+h2{
+	text-align:center;
+}
+
+section{
+	background-color: gray;
+}
+
+#principal{
+	display: block;
+	background-color:red;
+	text-align: center;
+
+}
+
+#principal ul{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+
+.ind{
+	padding-bottom: 20px;
+	background-color: black;
+}
+
+.plati img{
+	display: block;
+	margin: auto;
+
+}
+.plati{
+	text-align: center;
+}
+
+#principal li{
+	
+	float: left;
+	padding-right: 0.8%;
+	
+}
+
+#principal a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	color: white;
+
+}
+
+main{
+clear: both;
+background-color: gray;
+height: 630px;
+}
+
+.mn{
+	padding-top: 70px;
+}
+
+.con{
+	height: 655px;
+}
+
+.ar{
+	padding-top: 80px;
+}
+
+article{ /*realiza cambios a la etiqueta article y a las etiquetas que contiene*/
+	float: left;
+	width: 74%;
+}
+
+
+
+aside{
+	float: right;
+	width: 24%;
+	height: 100%;
+	text-align:center;
+	background-color: blue;
+	height: 100%;
+}
+
+aside a{ /*realiza cambios a la etiqueta a dentro de aside una clase para realizar cambios*/
+	margin: auto;
+	list-style-type: none;
+	border-top: 2px;
+	width: 150%;
+	font-size: 20px;
+}
+
+article img{/*realiza cambios a la etiqueta img dentro de article una clase para realizar cambios*/
+	margin:auto;
+	text-align:center;
+	display: block;
+}
+
+article p{ /*realiza cambios a la etiqueta p dentro de p una clase para realizar cambios*/
+	font-size: 20px;
+}
+
+article h2{
+	font-size: 40px;
+}
+
+footer{
+	clear: both;
+	float: bottom;
+	width: 100%;
+	height:150%;
+	text-align: center;
+	padding: 20px;
+	background-color: #fbfacb;
+}
+
+
+.ofer{  /*cuando traen un punto hace referencia a una clase para realizar cambios*/
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.af{ /*cuando traen un punto hace referencia a una clase para realizar cambios*/
+	padding-top: 40px;
+}
+
+
+.face{/*cuando traen un punto hace referencia a una clase para realizar cambios*/
+	padding-top: 86px;
+}
+
+.pl{/*cuando traen un punto hace referencia a una clase para realizar cambios*/
+	padding-top: 115px;
+}
+
+.coment{/*cuando traen un punto hace referencia a una clase para realizar cambios*/
+	width: 300px;
+	margin: auto;
+	display: block;
+}
+
+.ct{/*cuando traen un punto hace referencia a una clase para realizar cambios*/
+	text-align: center;
+}
+
+.texto{/*cuando traen un punto hace referencia a una clase para realizar cambios*/
+width: 400px;
+height: 35px;
+}
+
+.lg{/*cuando traen un punto hace referencia a una clase para realizar cambios*/
+	text-align: center; 
+	background-color: black;
+	border: solid blue 5px;
+	border-radius: 2px;
+	margin: 80px 850px;
+	display: grid;
+	padding-bottom:  30px;
+	color: white;
+}
+
+.us{/*cuando traen un punto hace referencia a una clse para realizar cambios*/
+	font-size: 1em;
+	border:0;
+	margin-bottom: 55px;
+	background:transparent;
+	width: 270px;
+	height: 35px;
+	border-bottom: solid blue 1px;
+	color: white;
+}
+
+.cñ{
+	font-size: 1em;
+	border:0;
+	margin-bottom: 20px;
+	background:transparent;
+	width: 270px;
+	height: 35px;
+	border-bottom: solid blue 1px;
+	color: white;
+}
+
+.lg h2{
+	font-size: 2em;
+}
+
+.log{
+	height: 750px;
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 700px){  /*se utiliza para que se acople a la pantalla que se requiera*/
+	main{
+		grid-template-columns: 1fr
+	}
+}
